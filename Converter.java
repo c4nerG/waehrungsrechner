@@ -40,7 +40,7 @@ public class Converter {
                         convertToDollars(money);
                         break;
                     case 2:
-                        convertToLila(money);
+                        convertToLira(money);
                         break;
                     case 3:
                         convertToKrone(money);
@@ -71,7 +71,7 @@ public class Converter {
         JLabel euroLabel = new JLabel("Betrag in Euro:");
         JTextField euroInput = new JTextField();
         JLabel currencyLabel = new JLabel("Wählen Sie eine Währung:");
-        JComboBox<String> currencyOptions = new JComboBox<>(new String[]{"Dollar", "Lila", "Dänische Krone"});
+        JComboBox<String> currencyOptions = new JComboBox<>(new String[]{"Dollar", "Lira", "Dänische Krone"});
         JButton convertButton = new JButton("Umwandeln");
         JTextArea resultArea = new JTextArea();
 
@@ -111,9 +111,9 @@ public class Converter {
         System.out.printf("Der Betrag in Dollar: %.2f%n", dollars);
     }
 
-    public static void convertToLila(double euro) {
-        double lila = euro * 29.48;
-        System.out.printf("Der Betrag in Lila: %.2f%n", lila);
+    public static void convertToLira(double euro) {
+        double lira = euro * 29.48;
+        System.out.printf("Der Betrag in Lira: %.2f%n", lira);
     }
 
     public static void convertToKrone(double euro) {
